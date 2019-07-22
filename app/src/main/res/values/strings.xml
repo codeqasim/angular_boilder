@@ -15,6 +15,11 @@
 
 
 
-
+    <!--Social-->
+    <string name="facebook_app_id">221623114699507</string>
+    <string name="user_exists">User already logged in</string>
+    <string name="sign_in_facebook">Sign in with Facebook</string>
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="logout_text">Sign out</string>
 
 </resources>

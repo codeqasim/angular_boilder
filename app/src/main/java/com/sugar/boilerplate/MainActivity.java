@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import com.sugar.boilerplate.CustomDrawer.DrawerMainActivity;
 import com.sugar.boilerplate.Map.MapsActivity;
+import com.sugar.boilerplate.SocialLogin.SocailMainActivity;
 import com.sugar.boilerplate.Splash.SplashScreen;
 import com.sugar.boilerplate.Tabs.TabMainActivity;
 
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         itemsList.add("Drawer");
         itemsList.add("Map");
         itemsList.add("Tabs");
+        itemsList.add("Social Login");
 
         arrayAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,itemsList);
         mainItemsList.setAdapter(arrayAdapter);
@@ -54,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 3:
                         startActivity(new Intent(MainActivity.this,TabMainActivity.class));
+                        break;
+                        case 4:
+                        startActivity(new Intent(MainActivity.this,SocailMainActivity.class));
                         break;
                 }
 
