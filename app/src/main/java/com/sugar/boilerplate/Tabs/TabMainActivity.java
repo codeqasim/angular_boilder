@@ -8,9 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
-import com.sugar.boilerplate.Fragments.Fragment1;
-import com.sugar.boilerplate.Fragments.Fragment2;
-import com.sugar.boilerplate.Fragments.Fragment3;
+import com.sugar.boilerplate.Fragments.Home;
+import com.sugar.boilerplate.Fragments.About;
+import com.sugar.boilerplate.Fragments.ContectUs;
 import com.sugar.boilerplate.R;
 
 public class TabMainActivity extends AppCompatActivity {
@@ -22,9 +22,9 @@ public class TabMainActivity extends AppCompatActivity {
 
         FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(), FragmentPagerItems.with(this)
-                .add("Fragment 1", Fragment1.class)
-                .add("Framgent 2", Fragment2.class)
-                .add("Framgent 3", Fragment3.class)
+                .add("Fragment 1", Home.class)
+                .add("Framgent 2", About.class)
+                .add("Framgent 3", ContectUs.class)
                 .create());
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);

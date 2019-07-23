@@ -5,9 +5,9 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string-array name="menuItems">
-        <item> Fragment 1 </item>
-        <item> Fragment 2 </item>
-        <item> Fragment 3 </item>
+        <item> Home </item>
+        <item> About </item>
+        <item> Contact Us </item>
     </string-array>
     <string name="title_activity_tab_main">TabMainActivity</string>
     <string name="action_settings">Settings</string>

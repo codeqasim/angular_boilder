@@ -20,9 +20,9 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 
-import com.sugar.boilerplate.Fragments.Fragment1;
-import com.sugar.boilerplate.Fragments.Fragment2;
-import com.sugar.boilerplate.Fragments.Fragment3;
+import com.sugar.boilerplate.Fragments.Home;
+import com.sugar.boilerplate.Fragments.About;
+import com.sugar.boilerplate.Fragments.ContectUs;
 import com.sugar.boilerplate.R;
 
 import java.util.ArrayList;
@@ -50,7 +50,7 @@ public class DrawerMainActivity extends AppCompatActivity {
 
         initial();
         adapterData();
-        setFragment(new Fragment1());
+        setFragment(new Home());
         //  txtHotelSearch.setText(read);
         appBarLayout.setVisibility(View.VISIBLE);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -73,15 +73,15 @@ public class DrawerMainActivity extends AppCompatActivity {
 
                 switch (position) {
                     case 1:
-                        setFragment(new Fragment1());
+                        setFragment(new Home());
                         drawerLayout.closeDrawers();
                         break;
                     case 2:
-                        setFragment(new Fragment2());
+                        setFragment(new About());
                         drawerLayout.closeDrawers();
                         break;
                     case 3:
-                        setFragment(new Fragment3());
+                        setFragment(new ContectUs());
                         drawerLayout.closeDrawers();
                         break;
 
