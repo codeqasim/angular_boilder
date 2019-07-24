@@ -22,4 +22,7 @@
     <string name="sign_in_google">Sign in with Google</string>
     <string name="logout_text">Sign out</string>
 
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac consectetur dui. Integer lacinia sapien quam, ut iaculis neque consequat in.</string>
+
 </resources>

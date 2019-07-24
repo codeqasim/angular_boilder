@@ -8,7 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.sugar.boilerplate.BottomNavigation.BottomNavigationMain;
+import com.sugar.boilerplate.AppIntro.AppIntroMainActivity;
 import com.sugar.boilerplate.CustomDrawer.DrawerMainActivity;
 import com.sugar.boilerplate.ExpandableRecycler.ExpandRecyclerViewMain;
 import com.sugar.boilerplate.Map.MapsActivity;
@@ -31,12 +31,14 @@ public class MainActivity extends AppCompatActivity {
 
         mainItemsList = findViewById(R.id.mainItemsList);
 
+        itemsList.add("App Intro");
         itemsList.add("Splash Screen");
         itemsList.add("Drawer");
-        itemsList.add("Map");
         itemsList.add("Tabs");
         itemsList.add("Social Login");
         itemsList.add("Expandable ListView");
+        itemsList.add("Map");
+
 
         arrayAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,itemsList);
         mainItemsList.setAdapter(arrayAdapter);
@@ -48,14 +50,14 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (position) {
                     case 0:
-                        startActivity(new Intent(MainActivity.this,SplashScreen.class));
+                        startActivity(new Intent(MainActivity.this,AppIntroMainActivity.class));
                         break;
 
                     case 1:
-                        startActivity(new Intent(MainActivity.this,DrawerMainActivity.class));
+                        startActivity(new Intent(MainActivity.this,SplashScreen.class));
                         break;
                     case 2:
-                        startActivity(new Intent(MainActivity.this,MapsActivity.class));
+                        startActivity(new Intent(MainActivity.this,DrawerMainActivity.class));
                         break;
                     case 3:
                         startActivity(new Intent(MainActivity.this,TabMainActivity.class));
@@ -65,6 +67,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 5:
                         startActivity(new Intent(MainActivity.this,ExpandRecyclerViewMain.class));
+                        break;
+                    case 6:
+                        startActivity(new Intent(MainActivity.this,MapsActivity.class));
                         break;
                 }
 

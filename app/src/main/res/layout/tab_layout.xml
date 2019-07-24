@@ -17,11 +17,30 @@
         android:layout_height="48dp"
         android:background="@color/colorWhite"
         app:stl_defaultTabTextColor="@color/colorPrimaryDark"
-        app:stl_defaultTabTextHorizontalPadding="24dp"
+        app:stl_defaultTabTextHorizontalPadding="23dp"
         app:stl_indicatorColor="@color/colorPrimaryDark"
         app:stl_indicatorInterpolation="linear"
         app:stl_indicatorThickness="3dp"
         app:stl_underlineThickness="1dp"
+        app:stl_indicatorInFront="false"
+        app:stl_indicatorGravity="bottom"
+        app:stl_indicatorCornerRadius="2dp"
+        app:stl_overlineColor="#4D000000"
+        app:stl_overlineThickness="0dp"
+        app:stl_underlineColor="#4D000000"
+
+        app:stl_dividerColor="#4D000000"
+        app:stl_dividerThickness="1dp"
+        app:stl_defaultTabBackground="?attr/selectableItemBackground"
+        app:stl_defaultTabTextAllCaps="true"
+
+        app:stl_defaultTabTextSize="12sp"
+
+        app:stl_defaultTabTextMinWidth="0dp"
+        app:stl_distributeEvenly="false"
+        app:stl_clickable="true"
+        app:stl_titleOffset="24dp"
+        app:stl_drawDecorationAfterTab="false"
         />
 
 
