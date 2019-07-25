@@ -37,6 +37,7 @@
         <activity android:name=".GetData.GetResponseData"/>
         <activity android:name=".NestedFragment.activities.NestedMainActivity"/>
         <activity android:name=".ScreenShot.ScreenShotMain"/>
+        <activity android:name=".FilterableRecyclerView.FiterMainActivity"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

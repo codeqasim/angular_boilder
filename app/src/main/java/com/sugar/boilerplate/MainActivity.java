@@ -2,16 +2,15 @@ package com.sugar.boilerplate;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.ListView;
 
 import com.sugar.boilerplate.AppIntro.AppIntroMainActivity;
 import com.sugar.boilerplate.CustomDrawer.DrawerMainActivity;
 import com.sugar.boilerplate.ExpandableRecycler.ExpandRecyclerViewMain;
+import com.sugar.boilerplate.FilterableRecyclerView.FiterMainActivity;
 import com.sugar.boilerplate.GetData.GetResponseData;
 import com.sugar.boilerplate.Map.MapsActivity;
 import com.sugar.boilerplate.NestedFragment.activities.NestedMainActivity;
@@ -45,6 +44,7 @@ public class MainActivity extends BaseActivity {
         itemsList.add("Nested Fragment");
         itemsList.add("Screen Shot");
         itemsList.add("Api-Response");
+        itemsList.add("Filterable List");
 
 
         arrayAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,itemsList);
@@ -86,6 +86,9 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 9:
                         startActivity(new Intent(MainActivity.this,GetResponseData.class));
+                        break;
+                    case 10:
+                        startActivity(new Intent(MainActivity.this,FiterMainActivity.class));
                         break;
                 }
 

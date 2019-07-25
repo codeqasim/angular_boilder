@@ -27,7 +27,7 @@ public class ResponseAdapter extends RecyclerView.Adapter<ResponseAdapter.Respon
     @Override
     public ResponseViewHolder onCreateViewHolder( @NonNull ViewGroup viewGroup,int i ) {
         context = viewGroup.getContext();
-        View view = LayoutInflater.from(context).inflate(R.layout.custom_response,viewGroup,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.custom_model,viewGroup,false);
         return new ResponseViewHolder(view);
     }
 

@@ -67,4 +67,13 @@ dependencies {
     // Nested Fragment
     implementation 'com.sbrukhanda.fragmentviewpager:fragmentviewpager:1.0.0'
 
+    implementation('com.jakewharton:butterknife:8.4.0') {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    annotationProcessor 'org.immutables:value:2.4.4'
+
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.github.burakeregar:EasiestGenericRecyclerAdapter:v1.0'
+
 }
