@@ -25,4 +25,11 @@
 
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac consectetur dui. Integer lacinia sapien quam, ut iaculis neque consequat in.</string>
 
+
+    <string name="permission_denied">Permission denied</string>
+    <string name="permission_denied_app">The App won\'t work without this permission. Are you sure you want to deny this permission?</string>
+    <string name="permission_deny">Deny</string>
+    <string name="permission_retry">Re-try</string>
+
+
 </resources>

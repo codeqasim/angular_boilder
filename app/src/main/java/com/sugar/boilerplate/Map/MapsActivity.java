@@ -39,7 +39,7 @@ import com.sugar.boilerplate.R;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, com.google.android.gms.location.LocationListener {
 
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "NestedMainActivity";
     private GoogleMap mMap;
     private TextView mLatitudeTextView;
     private TextView mLongitudeTextView;

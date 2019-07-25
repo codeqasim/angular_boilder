@@ -6,19 +6,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.ListView;
 
 import com.sugar.boilerplate.AppIntro.AppIntroMainActivity;
 import com.sugar.boilerplate.CustomDrawer.DrawerMainActivity;
 import com.sugar.boilerplate.ExpandableRecycler.ExpandRecyclerViewMain;
+import com.sugar.boilerplate.GetData.GetResponseData;
 import com.sugar.boilerplate.Map.MapsActivity;
+import com.sugar.boilerplate.NestedFragment.activities.NestedMainActivity;
+import com.sugar.boilerplate.ScreenShot.ScreenShotMain;
 import com.sugar.boilerplate.SocialLogin.SocailMainActivity;
 import com.sugar.boilerplate.Splash.SplashScreen;
 import com.sugar.boilerplate.Tabs.TabMainActivity;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     ListView mainItemsList;
     ArrayAdapter<String> arrayAdapter;
@@ -38,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
         itemsList.add("Social Login");
         itemsList.add("Expandable ListView");
         itemsList.add("Map");
+        itemsList.add("Nested Fragment");
+        itemsList.add("Screen Shot");
+        itemsList.add("Api-Response");
 
 
         arrayAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,itemsList);
@@ -70,6 +77,15 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 6:
                         startActivity(new Intent(MainActivity.this,MapsActivity.class));
+                        break;
+                    case 7:
+                        startActivity(new Intent(MainActivity.this,NestedMainActivity.class));
+                        break;
+                    case 8:
+                        startActivity(new Intent(MainActivity.this,ScreenShotMain.class));
+                        break;
+                    case 9:
+                        startActivity(new Intent(MainActivity.this,GetResponseData.class));
                         break;
                 }
 

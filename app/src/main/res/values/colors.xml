@@ -9,6 +9,23 @@
     <color name="colorDrawerDark">#5d6066</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000000</color>
-    <color name="colorLightGray">#c7c5c5</color>
+    <color name="colorLightGray">#dad8d8</color>
+
+    <color name="primary_text_light">#FFFFFF</color>
+    <color name="primary_text_dark">#DE000000</color>
+
+    <color name="secondary_text_light">#B3FFFFFF</color>
+    <color name="secondary_text_dark">#8A000000</color>
+
+    <color name="primary_background">#efeef3</color>
+    <color name="primary_background_dark">@color/colorPrimary</color>
+
+
+    <!-- *************************************************************************************** -->
+    <!-- Tabs -->
+    <!-- *************************************************************************************** -->
+
+    <color name="tabs_bg">#5F933F</color>
+    <color name="tabs_bg_selected">#3e5e2a</color>
 
 </resources>
