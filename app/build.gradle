@@ -46,7 +46,7 @@ dependencies {
     implementation 'com.karumi:dexter:5.0.0'
 
     // Tab Layout
-    implementation 'com.ogaclejapan.smarttablayout:library:1.7.0@aar'
+    implementation 'com.github.Andy671:Dachshund-Tab-Layout:v0.3.3'
     //Optional: see how to use the utility.
     implementation 'com.ogaclejapan.smarttablayout:utils-v4:1.7.0@aar'
 

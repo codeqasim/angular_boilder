@@ -95,6 +95,16 @@
                     app:bt_icon="@drawable/ic_person_black_24dp"
                     app:bt_shape="@drawable/transition_background_drawable_person"
                     app:bt_title="Profile" />
+
+                <com.gauravk.bubblenavigation.BubbleToggleView
+                    android:id="@+id/contactUs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:bt_colorActive="@color/blue_active"
+                    app:bt_colorInactive="@color/blue_inactive"
+                    app:bt_icon="@drawable/ic_contact_phone_black_24dp"
+                    app:bt_shape="@drawable/transition_background_drawable_call"
+                    app:bt_title="Contact" />
             </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
 
         </android.support.constraint.ConstraintLayout>

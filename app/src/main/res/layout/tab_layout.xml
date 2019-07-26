@@ -1,53 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom = "http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sample"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <include layout="@layout/toolbar_layout"/>
 
-    <com.ogaclejapan.smarttablayout.SmartTabLayout
-        android:id="@+id/viewpagertab"
-        android:layout_marginTop="?attr/actionBarSize"
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="@color/colorWhite"
-        app:stl_defaultTabTextColor="@color/colorPrimaryDark"
-        app:stl_defaultTabTextHorizontalPadding="23dp"
-        app:stl_indicatorColor="@color/colorPrimaryDark"
-        app:stl_indicatorInterpolation="linear"
-        app:stl_indicatorThickness="3dp"
-        app:stl_underlineThickness="1dp"
-        app:stl_indicatorInFront="false"
-        app:stl_indicatorGravity="bottom"
-        app:stl_indicatorCornerRadius="2dp"
-        app:stl_overlineColor="#4D000000"
-        app:stl_overlineThickness="0dp"
-        app:stl_underlineColor="#4D000000"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-        app:stl_dividerColor="#4D000000"
-        app:stl_dividerThickness="1dp"
-        app:stl_defaultTabBackground="?attr/selectableItemBackground"
-        app:stl_defaultTabTextAllCaps="true"
 
-        app:stl_defaultTabTextSize="12sp"
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"/>
 
-        app:stl_defaultTabTextMinWidth="0dp"
-        app:stl_distributeEvenly="false"
-        app:stl_clickable="true"
-        app:stl_titleOffset="24dp"
-        app:stl_drawDecorationAfterTab="false"
-        />
+
+
+        <com.kekstudio.dachshundtablayout.DachshundTabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:ddAnimatedIndicator="dachshund"
+            custom:ddIndicatorHeight="6dp"
+            custom:ddIndicatorColor="@android:color/white" />
+
+    </android.support.design.widget.AppBarLayout>
+
 
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager"
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/viewpagertab"
-        />
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        custom:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</android.support.design.widget.CoordinatorLayout>

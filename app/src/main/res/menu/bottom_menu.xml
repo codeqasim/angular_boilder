@@ -11,13 +11,13 @@
         android:icon="@drawable/ic_person_black_24dp"
         android:enabled="true"
         app:showAsAction="ifRoom"
-        android:title="search"/>
+        android:title="about"/>
 
     <item
-        android:icon="@drawable/ic_camera_black_24dp"
+        android:icon="@drawable/ic_contact_phone_black_24dp"
         android:enabled="true"
         app:showAsAction="ifRoom"
-        android:title="me"
+        android:title="contact us"
         />
 
 

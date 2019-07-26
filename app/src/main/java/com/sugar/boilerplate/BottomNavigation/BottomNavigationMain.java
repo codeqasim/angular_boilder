@@ -9,9 +9,8 @@ import android.view.View;
 
 import com.gauravk.bubblenavigation.BubbleNavigationLinearView;
 import com.gauravk.bubblenavigation.listener.BubbleNavigationChangeListener;
+import com.sugar.boilerplate.PagerAdapter;
 import com.sugar.boilerplate.R;
-
-import java.util.ArrayList;
 
 
 public class BottomNavigationMain extends AppCompatActivity {
@@ -28,7 +27,8 @@ public class BottomNavigationMain extends AppCompatActivity {
         bubbleNavigationLinearView.setTypeface(Typeface.createFromAsset(getAssets(), "rubik.ttf"));
 
         bubbleNavigationLinearView.setBadgeValue(0, "40");
-        bubbleNavigationLinearView.setBadgeValue(1, null); //invisible badge
+        bubbleNavigationLinearView.setBadgeValue(0, null);
+        bubbleNavigationLinearView.setBadgeValue(1, "20"); //invisible badge
 //        bubbleNavigationLinearView.setBadgeValue(2, "7");
 //        bubbleNavigationLinearView.setBadgeValue(3, "2");
 //        bubbleNavigationLinearView.setBadgeValue(4, ""); //empty badge

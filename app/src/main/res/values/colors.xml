@@ -34,6 +34,10 @@
     <color name="purple_inactive">#ba68c8</color>
     <color name="purple_bg_light">#f3e5f5</color>
 
+    <color name="blue_inactive">#64b5f6</color>
+
+    <color name="blue_active">#03a9f4</color>
+
 
     <color name="red_bg_light">#ffebee</color>
 
