@@ -67,7 +67,7 @@ public class FiterMainActivity extends BaseActivity {
                     @Override
                     public void onFilterComplete(int pI) {
 
-                        Toast.makeText(FiterMainActivity.this,""+pI,Toast.LENGTH_SHORT).show();
+                     //   Toast.makeText(FiterMainActivity.this,""+pI,Toast.LENGTH_SHORT).show();
                     }
                 });
             }

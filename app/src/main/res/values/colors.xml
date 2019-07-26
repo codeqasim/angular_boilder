@@ -27,5 +27,14 @@
 
     <color name="tabs_bg">#5F933F</color>
     <color name="tabs_bg_selected">#3e5e2a</color>
+    <color name="red_inactive">#e57373</color>
+    <color name="red_active">#f44336</color>
+
+    <color name="purple_active">#9c27b0</color>
+    <color name="purple_inactive">#ba68c8</color>
+    <color name="purple_bg_light">#f3e5f5</color>
+
+
+    <color name="red_bg_light">#ffebee</color>
 
 </resources>

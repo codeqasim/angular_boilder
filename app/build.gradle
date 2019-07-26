@@ -52,8 +52,8 @@ dependencies {
 
     //Social Login
     implementation 'codelight.studios:android-smart-login:1.2'
-//        // Bottom NavigationBar
-//    implementation 'com.etebarian:meow-bottom-navigation:1.0.0'
+        // Bottom NavigationBar
+    implementation 'com.gauravk.bubblenavigation:bubblenavigation:1.0.7'
 
     // Expandable Recyclerview
     implementation 'com.hgDendi:expandable-recyclerview-adapter:1.0.1'

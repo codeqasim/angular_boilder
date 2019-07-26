@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.sugar.boilerplate.AppIntro.AppIntroMainActivity;
+import com.sugar.boilerplate.BottomNavigation.BottomNavigationMain;
 import com.sugar.boilerplate.CustomDrawer.DrawerMainActivity;
 import com.sugar.boilerplate.ExpandableRecycler.ExpandRecyclerViewMain;
 import com.sugar.boilerplate.FilterableRecyclerView.FiterMainActivity;
@@ -47,6 +48,7 @@ public class MainActivity extends BaseActivity {
         itemsList.add("Api-Response");
         itemsList.add("Filterable List");
         itemsList.add("MultiImage Picker");
+        itemsList.add("Bottom Navigation");
 
 
         arrayAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,itemsList);
@@ -92,8 +94,11 @@ public class MainActivity extends BaseActivity {
                     case 10:
                         startActivity(new Intent(MainActivity.this,FiterMainActivity.class));
                         break;
-                        case 11:
+                    case 11:
                         startActivity(new Intent(MainActivity.this,ImagePickerMain.class));
+                        break;
+                    case 12:
+                        startActivity(new Intent(MainActivity.this,BottomNavigationMain.class));
                         break;
                 }
 

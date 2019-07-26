@@ -1,20 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
 
-    <!--<com.etebarian.meowbottomnavigation.MeowBottomNavigation-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--app:mbn_backgroundBottomColor="#ffffff"-->
-        <!--app:mbn_countBackgroundColor="#ff6f00"-->
-        <!--app:mbn_countTextColor="#ffffff"-->
-        <!--android:id="@+id/bottomNavigation"-->
-        <!--app:mbn_defaultIconColor="#90a4ae"-->
-        <!--app:mbn_rippleColor="#2f424242"-->
-        <!--app:mbn_selectedIconColor="#3c415e"-->
-        <!--app:mbn_shadowColor="#1f212121"/>-->
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".BottomBarActivity">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@id/bottom_navigation_view_linear"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+                android:id="@+id/bottom_navigation_view_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="8dp"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.gauravk.bubblenavigation.BubbleToggleView
+                    android:id="@+id/l_item_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:bt_active="true"
+                    app:bt_colorActive="@color/red_active"
+                    app:bt_colorInactive="@color/red_inactive"
+                    app:bt_icon="@drawable/ic_home_black_24dp"
+                    app:bt_shape="@drawable/transition_background_drawable_home"
+                    app:bt_title="Home" />
+
+                <!--<com.gauravk.bubblenavigation.BubbleToggleView-->
+                <!--android:id="@+id/l_item_search"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:bt_badgeBackgroundColor="@color/green_active"-->
+                <!--app:bt_colorActive="@color/blue_active"-->
+                <!--app:bt_colorInactive="@color/blue_inactive"-->
+                <!--app:bt_icon="@drawable/ic_search"-->
+                <!--app:bt_shape="@drawable/transition_background_drawable_search"-->
+                <!--app:bt_title="@string/search" />-->
+
+                <!--<com.gauravk.bubblenavigation.BubbleToggleView-->
+                <!--android:id="@+id/l_item_profile_list"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:bt_colorActive="@color/blue_grey_active"-->
+                <!--app:bt_colorInactive="@color/blue_grey_inactive"-->
+                <!--app:bt_icon="@drawable/ic_like"-->
+                <!--app:bt_shape="@drawable/transition_background_drawable_like"-->
+                <!--app:bt_title="@string/likes" />-->
+
+                <!--<com.gauravk.bubblenavigation.BubbleToggleView-->
+                <!--android:id="@+id/l_item_notification"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:bt_colorActive="@color/green_active"-->
+                <!--app:bt_colorInactive="@color/green_inactive"-->
+                <!--app:bt_icon="@drawable/ic_playlist"-->
+                <!--app:bt_shape="@drawable/transition_background_drawable_list"-->
+                <!--app:bt_title="@string/notification" />-->
+
+                <com.gauravk.bubblenavigation.BubbleToggleView
+                    android:id="@+id/l_item_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:bt_colorActive="@color/purple_active"
+                    app:bt_colorInactive="@color/purple_inactive"
+                    app:bt_icon="@drawable/ic_person_black_24dp"
+                    app:bt_shape="@drawable/transition_background_drawable_person"
+                    app:bt_title="Profile" />
+            </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+
 
 </LinearLayout>
