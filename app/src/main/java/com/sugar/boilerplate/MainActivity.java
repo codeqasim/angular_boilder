@@ -12,6 +12,7 @@ import com.sugar.boilerplate.CustomDrawer.DrawerMainActivity;
 import com.sugar.boilerplate.ExpandableRecycler.ExpandRecyclerViewMain;
 import com.sugar.boilerplate.FilterableRecyclerView.FiterMainActivity;
 import com.sugar.boilerplate.GetData.GetResponseData;
+import com.sugar.boilerplate.ImagePicker.ImagePickerMain;
 import com.sugar.boilerplate.Map.MapsActivity;
 import com.sugar.boilerplate.NestedFragment.activities.NestedMainActivity;
 import com.sugar.boilerplate.ScreenShot.ScreenShotMain;
@@ -45,6 +46,7 @@ public class MainActivity extends BaseActivity {
         itemsList.add("Screen Shot");
         itemsList.add("Api-Response");
         itemsList.add("Filterable List");
+        itemsList.add("MultiImage Picker");
 
 
         arrayAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,itemsList);
@@ -89,6 +91,9 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 10:
                         startActivity(new Intent(MainActivity.this,FiterMainActivity.class));
+                        break;
+                        case 11:
+                        startActivity(new Intent(MainActivity.this,ImagePickerMain.class));
                         break;
                 }
 

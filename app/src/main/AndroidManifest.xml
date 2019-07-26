@@ -38,6 +38,7 @@
         <activity android:name=".NestedFragment.activities.NestedMainActivity"/>
         <activity android:name=".ScreenShot.ScreenShotMain"/>
         <activity android:name=".FilterableRecyclerView.FiterMainActivity"/>
+        <activity android:name=".ImagePicker.ImagePickerMain"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -48,6 +49,16 @@
             android:value="@integer/google_play_services_version" />
 
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+
+        <!--MultiImage Picker-->
+        <activity
+            android:name="com.darsh.multipleimageselect.activities.AlbumSelectActivity"
+            android:theme="@style/MultipleImageSelectTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
     </application>
 
